@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<lint>
+    <!--&lt;!&ndash;配置所有Issue的默认优先级&ndash;&gt;-->
+    <!--<issue id="all" severity="warning"/>-->
+    <!--&lt;!&ndash;&lt;!&ndash;配置指定Issue的优先级&ndash;&gt;&ndash;&gt;-->
+    <!--<issue id="ShowToast" severity="error"/>-->
+    <!--&lt;!&ndash;忽略指定路径的指定问题，支持正则表达式或path匹配&ndash;&gt;-->
+    <!--<issue id="NewApi">-->
+        <!--<ignore regexp=".*MainActivity.java"/>-->
+        <!--<ignore path="**/com/paincker/lint/demo/MainActivity.java"/>-->
+        <!--<ignore path="res/layout/activation.xml"/>-->
+    <!--</issue>-->
+
+
+    <!--<issue id="all" severity="warning"/>-->
+
+
+    <!-- 忽略android建议的最小尺寸建议提示 -->
+    <issue id="SmallSp" severity="ignore"/>
+    <!-- 忽略 ButtonStyle-->
+    <issue id="ButtonStyle" severity="ignore"/>
+    <!-- 忽略拼写问题-->
+    <issue id="SpellCheckingInspection" severity="ignore"/>
+    <issue id="Spelling" severity="ignore"/>
+    <!-- 忽略对控件内容描述的检查 -->
+    <issue id="ContentDescription" severity="ignore"/>
+
+    <issue id="SameParameterValue" severity="ignore"/>
+    
+    <issue id="UsingHttp" severity="ignore" >
+        <ignore path="demo/gradle/wrapper/gradle-wrapper.properties" />
+    </issue>
+    
+    <!-- 忽略google提供的云端备份功能 -->
+    <issue id="AllowBackup" severity="ignore"/>
+    <issue id="RtlEnabled" severity="ignore" />
+    <!-- 忽略Missing density variation folders in 'src/main/res': drawable-hdpi, drawable-mdpi, drawable-xxhdpi -->
+    <issue id="IconMissingDensityFolder" severity="ignore"/>
+    <issue id="GradleDependency" severity="ignore" />
+</lint>
